@@ -19,7 +19,7 @@ defmodule ChirpWeb.Router do
 
     get "/", PageController, :home
 
-    live "/thermo", ThermoLive.Index,:index
+    live "/thermo/:house", ThermoLive.Index
 
     live "/cart", CartLive.Index,:index
 
